@@ -5,7 +5,7 @@ code                           = "code/application.zip"
 description                    = ""
 
 
-enviroment_variables = {
+environment_variables = {
   "ENVIROMENT"             =  "DEV",
   "VALIDATE"               =  "TRUE",
   "APP_NAME  "             =  "",
