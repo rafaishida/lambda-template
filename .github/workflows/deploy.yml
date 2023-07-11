@@ -19,7 +19,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-2
         role-duration-seconds: 1200
-        role-session-name: MySessionName
+        role-session-name: teste
       - name: zip Lambda Function
         run: |
           zip -r9 lambda.zip lambdaFunction.py
