@@ -22,7 +22,7 @@ jobs:
         role-session-name: teste
       - name: zip Lambda Function
         run: |
-          zip -r9 lambda.zip lambdaFunction.py
+          zip -r9 lambda.zip app/lambda_function.py
       - name: AWS Deploy
         run: |
-          aws lambda update-function-code --function-name NameOfLambdaFunction --zip-file fileb://lambda.zip
+          aws lambda update-function-code --function-name teste --zip-file fileb://lambda.zip
